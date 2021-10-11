@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -443,6 +443,15 @@ h1, h2, h3, h4, h5, h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+@media(max-width: 520px) {
+  #hero {
+    width: 100%;
+    height: auto;
+  }
+  #hero:before {
+    background: rgba(0, 0, 0, 0.0);
   }
 }
 
